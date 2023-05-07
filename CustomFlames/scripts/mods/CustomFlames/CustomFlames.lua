@@ -215,7 +215,6 @@ mod:hook_origin("FlamerGasEffects", "_update_impact_effects", function(self, dt,
             end
             
             if impact_name == cultistGreenImp or impact_name == renegadeWhiteImp or impact_name == nurgleVomitImp then
-                mod:echo(impact_name)
                 if World.are_particles_playing(self._world, impact_id) then
                     World.stop_spawning_particles(self._world, impact_id)
                 end
